@@ -3,7 +3,7 @@
    Ciêcia da Computação
    luis.felipe.almeida.nascimento@gmail.com 
 
-2. [Link do projeto!](https://trab1-web3-luisfelipe.herokuapp.com/)
+2. [Link do projeto!](https://trab2-web3-luisfelipe.herokuapp.com/)
 
 3. Crie um uma aplicação utilizando o node.js seguindo as seguintes restrições:
 
