@@ -3,8 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Ola</title>
+    <link rel="stylesheet" href="css/basic.css">
   </head>
   <body>
-    <h1> Olá </h2>
+    <div id="tudo">
+      <ul>
+        <lo>Links para os Exercicios</lo>
+      <% for(var i in enderecos) {
+          var link = enderecos[i];
+      %>
+        <li><a href="<%=link.link%>"><%=link.questao%></a></li>
+      <%}%>
+      </ul>
+      <img src="konichiwa.png" alt="Foto do produto">
+      <h1> Olá </h2>
+    </div>
+
   </body>
 </html>
