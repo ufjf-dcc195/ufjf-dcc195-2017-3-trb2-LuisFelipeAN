@@ -46,3 +46,9 @@ body{
  ul { list-style-type: circle; }
  ol { list-style-type: circle; }
  li { list-style-type: circle; }
+.img{
+  position:relative;
+  width: auto;
+  height: auto;
+  background-color: inherit;
+}
