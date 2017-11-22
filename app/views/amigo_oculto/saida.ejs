@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Amigo Oculto</title>
+    <link rel="stylesheet" href="css/basic.css">
+  </head>
+  <body>
+    <div id="tudo">
+      <h1>Amigo Oculto<h2>
+      <table>
+        <% for(var i in amigos){
+                var par = amigos[i];
+        %>
+            <tr>
+            <td><%=par.nome1%></td>
+            <td><%=par.nome2%></td>
+            </tr>
+        <%}%>
+      </table>
+    </div>
+  </body>
+</html>

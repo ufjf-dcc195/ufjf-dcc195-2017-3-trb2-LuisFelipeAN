@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nomes Amigo Oculto</title>
+    <link rel="stylesheet" href="css/basic.css">
+  </head>
+  <body>
+    <div id="tudo">
+      <h1>Amigo Oculto</h1>
+      <h3>Informe os nomes</h3>
+      <form name="myform" action="" method="POST">
+        <% for (var i=0; i< participantes;i++){
+          %>
+        <input type="text" name="nomes" placeholder="Nome"/><br>
+        <%}%>
+        <input type="submit"/>
+      </form>
+    </div>
+  </body>
+</html>
