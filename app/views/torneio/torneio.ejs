@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Torneio</title>
+    <link rel="stylesheet" href="css/basic.css">
+  </head>
+  <body>
+    <div id="tudo" height="auto">
+      <h1> Torneio </h1>
+      <form method="POST">
+      <div id="oitavas">
+        <% for(var i in jogos){
+              jogo = jogos[i];%>
+        <p> <%=jogo.e1%>------------<%=jogo.e2%></p>
+        <%}%>
+
+      </div>
+      <input type="submit">
+    </form>
+    </div>
+  </body>
+</html>

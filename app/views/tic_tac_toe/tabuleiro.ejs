@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="css/basic.css">
+  </head>
+  <body>
+    <div id="tudo">
+      <h1>Jogo da Velha</h1>
+      <p>Preencha os campos do formulario com "x" ou "o" caso quera adicionar uma marcacao</p>
+      <table>
+        <% for(var i in tabuleiro){
+                linha=tabuleiro[i];%>
+            <tr align="center">
+            <%
+            for(var j in linha){
+                  var casa = linha[j];
+                  var  peca;%>
+                  <td align="center">
+                  <%if(casa=="x"){%>
+                    <div id="casa">  <img  src="x.png" alt="Foto do produto"></div>
+
+                  <%}
+                  else if(casa=="o"){%>
+                    <div id="casa">  <img  src="o.png" alt="Foto do produto"></div>
+                  <%}else{%>
+                    <div id="casa"></div>
+                <%}%>
+              </td>
+            <%}%>
+          </tr>
+          <%}%>
+    </table>
+      <form name="myform" action="" method="POST">
+        <%for(var i in tabuleiro){
+            linha=tabuleiro[i];
+            for(var j in linha){
+              var casa = linha[j];%>
+              <input type="text" name="jogo" value="<%=casa%>">
+            <%}%>
+            <br>
+          <%}%>
+      <input type="submit">
+      </form>
+    </div>
+  </body>
+</html>
