@@ -6,18 +6,25 @@
     <link rel="stylesheet" href="css/basic.css">
   </head>
   <body>
-    <div id="tudo">
+    <div class = "tudo2">
       <h1>Amigo Oculto<h2>
       <table>
-        <% for(var i in amigos){
-                var par = amigos[i];
-        %>
-            <tr>
-            <td><%=par.nome1%></td>
-            <td><%=par.nome2%></td>
+        <tr>
+          <td>Paticipante     </td>
+          <td>Amigo</td>
+            <div id="tab_amigo">
             </tr>
-        <%}%>
+            <% for(var i in amigos){
+                    var par = amigos[i];
+            %>
+                <tr>
+                <td><%=par.nome1%></td>
+                <td><%=par.nome2%></td>
+                </tr>
+            <%}%>
+             </div>
       </table>
+
     </div>
   </body>
 </html>

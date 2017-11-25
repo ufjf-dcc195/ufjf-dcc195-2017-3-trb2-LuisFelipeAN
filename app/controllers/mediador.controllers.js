@@ -1,12 +1,8 @@
 module.exports.amigo_oculto = function(req,res,next){
   if(req.method=='GET'){
-    if(req.query.num){
-      res.render("amigo_oculto/informa_nomes",{participantes : req.query.num})
-    }else {
-      res.render("amigo_oculto/informa_nomes",{participantes : 10})
-    }
+    res.render("amigo_oculto/informa_nomes")
   }else if(req.method=='POST'){
-    var nomes = req.body.nomes;
+    var nomes = req.body.nomes.split("\n");
     var pares = []
     var contaPar=0;
     var numParticipantes = nomes.length

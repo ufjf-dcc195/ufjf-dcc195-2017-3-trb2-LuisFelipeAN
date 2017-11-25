@@ -20,6 +20,13 @@ body{
   font-size: 120%;
   font-style: oblique;
  }
+ .tudo2 {
+   width: 1250px;
+   height: auto;
+   background-color: gray;
+   padding: inherit;
+   font-style: oblique;
+  }
 
  a:link {
  color: red;
@@ -37,11 +44,33 @@ body{
    margin: 20px 0;
    padding: 30px;
  }
+ #tab_amigo{
+   width: auto;
+   height: auto;
+   font-size: 90%%;
+   font-style: normal;
+ }
  #lista{
    background-color: inherit;
    width: auto;
    height: 100px;
    color: inherit;
+ }
+ #casa{
+   background-color: white;
+   width: 75px;
+   height: 75px;
+   color: inherit;
+   align-items: center;
+   align-self: center;
+ }
+ #oitavas{
+   width: 200px;
+   height: auto;
+   background-color: gray;
+   padding: inherit;
+   font-size: 70%;
+   font-style: oblique;
  }
  ul { list-style-type: circle; }
  ol { list-style-type: circle; }
@@ -51,4 +80,8 @@ body{
   width: auto;
   height: auto;
   background-color: inherit;
+}
+#x{
+  &#9747;
+  &#9737;
 }

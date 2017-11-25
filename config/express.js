@@ -5,7 +5,6 @@ var compression = require("compression");
 var bodyParser = require("body-parser");
 var ejs = require("ejs");
 var session = require('express-session');
-
 process.env.NODE_ENV = process.env.NODE_ENV || 'devel';
 
 var config = require('./config');
@@ -30,6 +29,8 @@ module.exports = function(){
   app.set('view engine', 'ejs');
 
   app.use(express.static('./public'));
+  require("../app/routes/torneio.routes")(app);
+  require("../app/routes/tic.routes")(app);
   require("../app/routes/mediador.routes")(app);
   require("../app/routes/autor.routes")(app);
   require("../app/routes/index.routes")(app);
