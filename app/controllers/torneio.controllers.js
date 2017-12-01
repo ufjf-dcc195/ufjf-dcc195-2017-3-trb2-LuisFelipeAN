@@ -39,7 +39,7 @@ module.exports.torneio =  function(req,res,next){
       }
       console.log(e);
       if(req.session.rodada==4){
-        res.render('torneio/vencedor',{vencedor: e[0]})
+        res.render('torneio/vencedor',{'vencedor': e[0]})
       }else{
         var cont = 0;
         for(var i=0;i<e.length;i+=2){

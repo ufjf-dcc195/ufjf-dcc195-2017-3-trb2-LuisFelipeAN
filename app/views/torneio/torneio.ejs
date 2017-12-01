@@ -12,9 +12,10 @@
       <div id="oitavas">
         <% for(var i in jogos){
               jogo = jogos[i];%>
-        <p> <%=jogo.e1%>------------<%=jogo.e2%></p>
+       <tr>
+        <h1><td><%=jogo.e1%><td>   VS     </td><td><%=jogo.e2%></td></h1>
         <%}%>
-
+      </tr>
       </div>
       <input type="submit">
     </form>
